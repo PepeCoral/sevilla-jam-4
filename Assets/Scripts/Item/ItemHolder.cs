@@ -4,7 +4,7 @@ using UnityEngine.Rendering;
 
 public class ItemHolder : MonoBehaviour
 {
-    [SerializeField] Item item = null;
+    [SerializeField ] Item item = null;
 
     PlayerInput control;
     [SerializeField] bool isPlayer1;
@@ -52,7 +52,6 @@ public class ItemHolder : MonoBehaviour
 
     private Item getItemToPickUp(Collider2D[] cols)
     {
-        Item item = null;
 
         foreach (Collider2D col in cols)
         {
