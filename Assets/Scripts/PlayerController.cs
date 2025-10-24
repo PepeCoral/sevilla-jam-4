@@ -6,12 +6,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float aceleration = 0;
     private Rigidbody2D rb;
     Vector2 moveDirection;
-    ControlPlayer1 controlPlayer;
+    PlayerInput controlPlayer;
     [SerializeField] private bool isPlayer1;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        controlPlayer = new ControlPlayer1();
+        controlPlayer = new PlayerInput();
     }
     private void OnEnable()
     {
@@ -44,7 +44,6 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        print(moveDirection);
         rb.linearVelocity = moveDirection * aceleration;
 
     }
