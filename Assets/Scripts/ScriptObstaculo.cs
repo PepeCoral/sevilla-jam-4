@@ -2,7 +2,6 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.Rendering;
 using static UnityEngine.GraphicsBuffer;
-using UnityEngine;
 using System.Collections;
 
 public class ScriptObstaculo : MonoBehaviour
@@ -33,7 +32,6 @@ public class ScriptObstaculo : MonoBehaviour
         {
             if (objetivo == puntoA.position)
             {
-
                 objetivo = puntoB.position;
                 StartCoroutine(ExampleCoroutine());
             }
@@ -41,7 +39,6 @@ public class ScriptObstaculo : MonoBehaviour
             {
                 objetivo = puntoA.position;
                 StartCoroutine(ExampleCoroutine());
-               
             }
         }
     }
