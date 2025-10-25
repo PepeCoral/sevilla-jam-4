@@ -59,11 +59,17 @@ public class PlayerItemManager : MonoBehaviour
         Item itemToPickUp = getItemToPickUp(cols);
         ItemTable table = isTableNear(cols);
         ColoringStation coloringStation = isColoringStationNear(cols);
+        ItemPickUpAnimal animalPickUp = getAnimalPickUp(cols);
 
 
         if (!holder.hasItem() && itemToPickUp != null)
         {
             holder.setItem(itemToPickUp);
+        }
+
+        else if ( !holder.hasItem() && animalPickUp!= null)
+        {
+            holder.setItem(animalPickUp.pickAnimal());
         }
 
         else if (table != null)
@@ -142,6 +148,20 @@ public class PlayerItemManager : MonoBehaviour
         {
             holder.dropItem();
         }
+    }
+
+    private ItemPickUpAnimal getAnimalPickUp(Collider2D[] cols)
+    {
+        foreach (Collider2D col in cols)
+        {
+            ItemPickUpAnimal animal;
+            if (col.transform.TryGetComponent<ItemPickUpAnimal>(out animal))
+            {
+                return animal;
+            }
+        }
+
+        return null;
     }
 
     private Collider2D[] sortByDistance(Collider2D[] cols)
