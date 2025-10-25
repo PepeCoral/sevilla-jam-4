@@ -2,88 +2,51 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 
-public class ItemHolder : MonoBehaviour
+[System.Serializable]
+public class ItemHolder
 {
     [SerializeField ] Item item = null;
 
-    PlayerInput control;
-    [SerializeField] bool isPlayer1;
+    ItemRenderer itemRenderer = null;
 
-
-    private void Awake()
-    {
-        control = new PlayerInput();
-    }
-
-    private void OnEnable()
-    {
-        control.Enable();
-
-
-        if (isPlayer1)
-        {
-            control.Player1.Act.performed += Act;
-        }
-        else
-        {
-            control.Player2.Act.performed += Act;
-        }
-    }
-
-
-    private void Act(InputAction.CallbackContext _) 
+    public ItemHolder()
     {
 
-        var cols = Physics2D.OverlapCircleAll(this.transform.position, 1.2f);
-
-        Item itemToPickUp = getItemToPickUp(cols);
-
-        if (item == null && itemToPickUp != null )
-        {
-
-            print("Item was picked up");
-            item = itemToPickUp;
-        }
-
-        if (item != null && isTrashCanNear(cols)) {
-            item = null;
-        }
     }
-
-    private Item getItemToPickUp(Collider2D[] cols)
+    public ItemHolder(ItemRenderer renderer)
     {
-
-        foreach (Collider2D col in cols)
-        {
-            ItemPickUpElement itemBox;
-            if (col.transform.TryGetComponent<ItemPickUpElement>(out itemBox))
-            {
-                return itemBox.item;
-            }
-        }
-
-        return null;
+        itemRenderer = renderer;
     }
 
-    private bool isTrashCanNear(Collider2D[] cols)
-    { 
-    
-        foreach (Collider2D col in cols)
-        {
-            if (col.transform.tag == "TrashCan") {
-            return true;}
-        }
+    public bool hasItem() {  return item != null; }
 
-        return false;
-    }
-
-
-
-
-
-
-    private void OnDisable()
+    public Item dropItem()
     {
-        control.Disable();
+        var tempItem = item;
+        item = null;
+
+        updateItemRender(null);
+
+        return tempItem;
+
+
+    }
+
+    public Item getItem() { return item; }
+
+    public void setItem(Item item_)
+    {
+        if (item != null) Debug.LogError("Trying to set item with item already set");
+        updateItemRender(item_);
+
+        this.item = item_;
+    }
+
+    public void updateItemRender(Item item_)
+    {
+        if (itemRenderer != null)
+        {
+            itemRenderer.OnItemChange(item_);
+        }
     }
 }
