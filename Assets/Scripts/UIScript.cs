@@ -1,16 +1,19 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIScript : MonoBehaviour
 {
-    private float TimeValue = 120;
+    private float TimeValue = 100;
     private int ScoreValue;
+    public GameObject GameOverPanel;
     public TextMeshProUGUI TimeText;
     public TextMeshProUGUI ScoreText;
     private void FixedUpdate()
     {
         TimeValue -= Time.deltaTime;
-
+        if (TimeValue < 0)
+            SceneManager.LoadScene("StartMenu");
         UpdateUI();
     }
     public void UpdateUI()
