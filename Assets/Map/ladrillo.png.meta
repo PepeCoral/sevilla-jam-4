@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f51213fc76e807c4cb77e5dd7af89a68
+guid: 5dc83249ea6139d4b8789a9b293b0dcf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6604140858199820287
-    second: encimera_0
+      213: 4566738791550421929
+    second: ladrillo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: encimera_0
+      name: ladrillo_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1083b5431e06954a0800000000000000
-      internalID: -6604140858199820287
+      spriteID: 9ab0c5c3cb0506f30800000000000000
+      internalID: 4566738791550421929
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      encimera_0: -6604140858199820287
+      ladrillo_0: 4566738791550421929
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
