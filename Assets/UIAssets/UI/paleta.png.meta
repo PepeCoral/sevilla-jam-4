@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 5dc83249ea6139d4b8789a9b293b0dcf
+guid: b333d583a35496840b053bf24037f06c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4566738791550421929
-    second: ladrillo_0
+      213: -8484560205970819465
+    second: paleta_0
+  - first:
+      213: -6455250613797749002
+    second: paleta_1
+  - first:
+      213: 8102248203080006149
+    second: paleta_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 800
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ladrillo_0
+      name: paleta_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        x: 66
+        y: 617
+        width: 357
+        height: 313
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9ab0c5c3cb0506f30800000000000000
-      internalID: 4566738791550421929
+      spriteID: 776b1bf1279c04a80800000000000000
+      internalID: -8484560205970819465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paleta_1
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 608
+        width: 352
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe7674a4c75a66a0800000000000000
+      internalID: -6455250613797749002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paleta_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 233
+        width: 379
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a71aa20d7f07070800000000000000
+      internalID: 8102248203080006149
       vertices: []
       indices: 
       edges: []
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ladrillo_0: 4566738791550421929
+      paleta_0: -8484560205970819465
+      paleta_1: -6455250613797749002
+      paleta_2: 8102248203080006149
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

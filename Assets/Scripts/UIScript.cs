@@ -10,6 +10,7 @@ public class UIScript : MonoBehaviour
     private void FixedUpdate()
     {
         TimeValue -= Time.deltaTime;
+
         UpdateUI();
     }
     public void UpdateUI()

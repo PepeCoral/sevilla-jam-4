@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5dc83249ea6139d4b8789a9b293b0dcf
+guid: a4b34001f8c84784c89a29345636d68a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4566738791550421929
-    second: ladrillo_0
+      213: 7469049584242373712
+    second: barraProgresoBackground_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 800
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ladrillo_0
+      name: barraProgresoBackground_0
       rect:
         serializedVersion: 2
         x: 0
@@ -108,15 +108,15 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 321, y: 397, z: 321, w: 378}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9ab0c5c3cb0506f30800000000000000
-      internalID: 4566738791550421929
+      spriteID: 054bb8e260567a760800000000000000
+      internalID: 7469049584242373712
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1e09050a15231e9418ab316c746ec64b
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ladrillo_0: 4566738791550421929
+      barraProgresoBackground_0: 7469049584242373712
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
