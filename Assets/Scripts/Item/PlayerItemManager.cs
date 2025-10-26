@@ -1,8 +1,11 @@
+using NUnit.Framework;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net.NetworkInformation;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
-using System.Linq;
 
 public class PlayerItemManager : MonoBehaviour
 {
@@ -13,7 +16,11 @@ public class PlayerItemManager : MonoBehaviour
 
     private PlayerController playerController;
 
-
+    [SerializeField] AudioClip placeWig;
+    [SerializeField] AudioClip dropItem;
+    [SerializeField] AudioClip trashItem;
+    [SerializeField] List<AudioClip> pickUps;
+    [SerializeField] AudioClip trashSound;
 
     private void Awake()
     {
@@ -51,7 +58,7 @@ public class PlayerItemManager : MonoBehaviour
     }
 
 
-    private void Act(InputAction.CallbackContext _)
+    private void Act()
     {
         var cols = Physics2D.OverlapCircleAll(this.transform.position, 1f);
         cols = sortByDistance(cols);
@@ -67,38 +74,41 @@ public class PlayerItemManager : MonoBehaviour
 
         if (holder.hasItem() && holder.getItem()?.GetType() == typeof(WigItem) && baldChair != null && baldChair.isBusy) 
         {
-            print(1);
+            SoundHelper.Instance.PlaySound(placeWig);
             baldChair.giveWig((WigItem)holder.dropItem());
         }
 
         else if (!holder.hasItem() && animalPickUp != null)
         {
-            print(2);
+            SoundHelper.Instance.PlayRandomSound(pickUps);
+
             holder.setItem(animalPickUp.pickAnimal());
         }
-        else if (coloringStation != null)
-        {
-            print(4);
-            coloringStationLogic(coloringStation);
-        }
+        
         else if (!holder.hasItem())
         {
             if(table != null && table.hasItem())
             {
                 tableLogic(table);
             }
+            else if(coloringStation!= null && coloringStation.hasItem())
+            {
+                coloringStationLogic(coloringStation);
+            }
             else if (itemToPickUp != null)
             {
-                print(7);
                 holder.setItem(itemToPickUp);
             }
 
 
         }
-
+        else if(coloringStation!=null && coloringStation.hasItem()|| coloringStation!=null && holder.hasItem() && holder.getItem().GetType() == typeof(WigItem))
+        {
+            print(4);
+            coloringStationLogic(coloringStation);
+        }
         else if (table != null)
         {
-            print(3);
             tableLogic(table);
         }
 
@@ -106,25 +116,29 @@ public class PlayerItemManager : MonoBehaviour
 
         else if (holder.hasItem() && !(holder.getItem().GetType() == typeof(AnimalItem) || holder.getItem().GetType() == typeof(BaldAnimalItem)) && isTagNear(cols, "TrashCan"))
         {
-            print(5);
             holder.dropItem();
         }
 
         else if (holder.hasItem() && (holder.getItem().GetType() == typeof(AnimalItem) || holder.getItem().GetType() == typeof(BaldAnimalItem)) && isTagNear(cols, "Trasportin"))
         {
-            print(6);
             holder.dropItem();
         }
 
         
     }
 
+    private void Act(InputAction.CallbackContext _)
+    {
+        Act();
+    }
     private void coloringStationLogic(ColoringStation coloringStation)
     {
         if (holder.getItem()?.GetType() == typeof(WigItem) && !coloringStation.hasItem())
         {
 
             coloringStation.setItem(holder.dropItem());
+            SoundHelper.Instance.PlaySound(dropItem);
+
         }
         else if (coloringStation.hasItem())
         {
@@ -143,6 +157,8 @@ public class PlayerItemManager : MonoBehaviour
             else
             {
                 holder.setItem(coloringStation.pickItem());
+                SoundHelper.Instance.PlayRandomSound(pickUps);
+
             }
 
         }
@@ -185,11 +201,19 @@ public class PlayerItemManager : MonoBehaviour
         else if (table.hasItem() && !holder.hasItem())
         {
             holder.setItem(table.pickItem());
+            SoundHelper.Instance.PlayRandomSound(pickUps);
+            SoundHelper.Instance.PlaySound(trashItem);
+
+
         }
 
         else if (!table.hasItem() && holder.hasItem())
         {
             table.setItem(holder.dropItem());
+            SoundHelper.Instance.PlaySound(dropItem);
+            SoundHelper.Instance.PlaySound(trashItem);
+
+
         }
     }
 
@@ -229,7 +253,25 @@ public class PlayerItemManager : MonoBehaviour
         return default(T);
     }
 
-    
+    private void Update()
+    {
+        if (playerController.isPlayer1)
+        {
+            if (Gamepad.all.Count > 0 && (Gamepad.all[0].buttonEast.wasPressedThisFrame || Gamepad.all[0].buttonSouth.wasPressedThisFrame))
+            {
+                Act();
+            }
+        }
+        else
+        {
+            if (Gamepad.all.Count > 1 && (Gamepad.all[1].buttonEast.wasPressedThisFrame || Gamepad.all[1].buttonSouth.wasPressedThisFrame))
+            {
+                Act();
+            }
+        }
+    }
+
+
 
 
 

@@ -44,6 +44,21 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+        if (isPlayer1) 
+        {
+            if (Gamepad.all.Count > 0 ) {
+                moveDirection = Gamepad.all[0].leftStick.value;
+                    }
+        }
+        else
+        {
+            if (Gamepad.all.Count > 1)
+            {
+                moveDirection = Gamepad.all[1].leftStick.value;
+            }
+        }
+
         rb.linearVelocity = moveDirection * aceleration;
 
     }

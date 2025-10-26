@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WigItem
   sprite: {fileID: 21300000, guid: a5c5444d588d3264bad8b31e771d743b, type: 3}
   color: 3
-  wigType: 0
+  wigType: 3
   wigForBald: {fileID: 21300000, guid: 493c2ace6abd9af4793ff64f6405a8e1, type: 3}

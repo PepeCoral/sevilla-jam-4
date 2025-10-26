@@ -5,6 +5,7 @@ public class ColoringStation: MonoBehaviour
     [SerializeField] ItemHolder holder;
     [SerializeField] GameObject particle;
     [SerializeField] public WigColor color;
+    [SerializeField] private AudioClip sound;
 
     private float particleDelay;
     [SerializeField] private float totalParticleDelay;
@@ -47,9 +48,11 @@ public class ColoringStation: MonoBehaviour
 
     public bool processAndCheck()
     {
-        Debug.Log(currentProgress);
+        if( currentProgress == 0)
+        {
+            SoundHelper.Instance.PlaySound(sound);
+        }
         currentProgress++;
-        Debug.Log(currentProgress);
 
 
         bool isDone = currentProgress >= totalProgress;

@@ -1,5 +1,6 @@
 using System.Diagnostics.Contracts;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 
 public class PlayerAnimator : MonoBehaviour
@@ -56,6 +57,21 @@ public class PlayerAnimator : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (controller.isPlayer1)
+        {
+            if (Gamepad.all.Count > 0 )
+            {
+                moveDirection = Gamepad.all[0].leftStick.value;
+            }
+        }
+        else
+        {
+            if (Gamepad.all.Count > 1 )
+            {
+                moveDirection = Gamepad.all[1].leftStick.value;
+            }
+        }
+
         float moveSign = Mathf.Sign(moveDirection.x);
 
         if (moveDirection.x == 0) moveSign = 0;

@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ItemTable : MonoBehaviour
@@ -7,6 +9,13 @@ public class ItemTable : MonoBehaviour
 
     private float particleDelay;
     [SerializeField] private float totalParticleDelay;
+
+    [SerializeField] private List<AudioClip> cat;
+    [SerializeField] private List<AudioClip> dog;
+    [SerializeField] private List<AudioClip> erizo;
+    [SerializeField] private List<AudioClip> oveja;
+    [SerializeField] private AudioClip cutting;
+    [SerializeField] private AudioClip creating;
 
     private void Awake()
     {
@@ -43,10 +52,35 @@ public class ItemTable : MonoBehaviour
 
     public bool processAndCheck()
     {
-        Debug.Log(currentProgress);
-        currentProgress++;
-        Debug.Log(currentProgress);
+        if (currentProgress == 0)
+        {
+            if (holder.getItem().GetType() == typeof(AnimalItem))
+            {
+                switch (holder.getItem().name)
+                {
+                    case "Gato":
+                        SoundHelper.Instance.PlayRandomSound(cat);
+                        break;
+                    case "Perro":
+                        SoundHelper.Instance.PlayRandomSound(dog);
+                        break;
+                    case "Erizo":
+                        SoundHelper.Instance.PlayRandomSound(erizo);
+                        break;
+                    case "Oveja":
+                        SoundHelper.Instance.PlayRandomSound(oveja);
+                        break;
+                }
 
+                SoundHelper.Instance.PlaySound(cutting);
+            }
+             if (holder.getItem().GetType() == typeof(RawHairItem))
+            {
+                SoundHelper.Instance.PlaySound(creating);
+            }
+        }
+
+        currentProgress++;
 
         bool isDone = currentProgress >= totalProgress;
         if (isDone) { currentProgress = 0; }
