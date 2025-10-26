@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: 5cbea86710d95654a844cd6c6312e681
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4835955587712893197
+    second: Erizo_pelado_0
+  - first:
+      213: -5104031117813129256
+    second: Erizo_pelado_1
+  - first:
+      213: -5186075154339069186
+    second: Erizo_pelado_2
+  - first:
+      213: 5921191389514253949
+    second: Erizo_pelado_3
+  - first:
+      213: -242502303496718468
+    second: Erizo_pelado_4
+  - first:
+      213: -4063626479476785493
+    second: Erizo_pelado_5
+  - first:
+      213: -8470666707749718334
+    second: Erizo_pelado_6
+  - first:
+      213: -1851877930023389502
+    second: Erizo_pelado_7
+  - first:
+      213: -8420625726787871772
+    second: Erizo_pelado_8
+  - first:
+      213: -3152295404853801051
+    second: Erizo_pelado_9
+  - first:
+      213: -5672986801665990782
+    second: Erizo_pelado_10
+  - first:
+      213: 7855545942584797014
+    second: Erizo_pelado_11
+  - first:
+      213: -2580629055986175428
+    second: Erizo_pelado_12
+  - first:
+      213: -3806463346587923104
+    second: Erizo_pelado_13
+  - first:
+      213: 8262225530106763904
+    second: Erizo_pelado_14
+  - first:
+      213: 3163964602705217362
+    second: Erizo_pelado_15
+  - first:
+      213: -6348929864919751163
+    second: Erizo_pelado_16
+  - first:
+      213: -1130467968181238239
+    second: Erizo_pelado_17
+  - first:
+      213: 6668390040914746401
+    second: Erizo_pelado_18
+  - first:
+      213: -5717491841463349707
+    second: Erizo_pelado_19
+  - first:
+      213: -6496746689053804939
+    second: Erizo_pelado_20
+  - first:
+      213: 2447853425593590552
+    second: Erizo_pelado_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1024
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Erizo_pelado_0
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 899
+        width: 29
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01413b2cf3cc1340800000000000000
+      internalID: 4835955587712893197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_1
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 976
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df553c9db6da29b0800000000000000
+      internalID: -5104031117813129256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_2
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 978
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef20427cf1c5708b0800000000000000
+      internalID: -5186075154339069186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_3
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 951
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76491b623c4c2250800000000000000
+      internalID: 5921191389514253949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_4
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 935
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c773dd6907572acf0800000000000000
+      internalID: -242502303496718468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_5
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 921
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae3ae63f391b97c0800000000000000
+      internalID: -4063626479476785493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_6
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 914
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6b9d14285227a80800000000000000
+      internalID: -8470666707749718334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_7
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 916
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6f19595decc46e0800000000000000
+      internalID: -1851877930023389502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_8
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 908
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb1b40148de32b80800000000000000
+      internalID: -8420625726787871772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_9
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 902
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5afc796e70cc044d0800000000000000
+      internalID: -3152295404853801051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_10
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 901
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f18378f808541b0800000000000000
+      internalID: -5672986801665990782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_11
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65727801a61840d60800000000000000
+      internalID: 7855545942584797014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_12
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 883
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3274ecdb83cf2cd0800000000000000
+      internalID: -2580629055986175428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_13
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 891
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d0518f0c9bc2bc0800000000000000
+      internalID: -3806463346587923104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_14
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 881
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a5d20385259a270800000000000000
+      internalID: 8262225530106763904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_15
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 881
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2578722fa09a8eb20800000000000000
+      internalID: 3163964602705217362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_16
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 870
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 506e6990de114e7a0800000000000000
+      internalID: -6348929864919751163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_17
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 864
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12689965f55cf40f0800000000000000
+      internalID: -1130467968181238239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_18
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 870
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12cd97c5961ea8c50800000000000000
+      internalID: 6668390040914746401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_19
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 862
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e0267767367a0b0800000000000000
+      internalID: -5717491841463349707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_20
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 855
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 576b04bbe4be6d5a0800000000000000
+      internalID: -6496746689053804939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Erizo_pelado_21
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 235
+        width: 855
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 813aab6a8b588f120800000000000000
+      internalID: 2447853425593590552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Erizo_pelado_0: 4835955587712893197
+      Erizo_pelado_1: -5104031117813129256
+      Erizo_pelado_10: -5672986801665990782
+      Erizo_pelado_11: 7855545942584797014
+      Erizo_pelado_12: -2580629055986175428
+      Erizo_pelado_13: -3806463346587923104
+      Erizo_pelado_14: 8262225530106763904
+      Erizo_pelado_15: 3163964602705217362
+      Erizo_pelado_16: -6348929864919751163
+      Erizo_pelado_17: -1130467968181238239
+      Erizo_pelado_18: 6668390040914746401
+      Erizo_pelado_19: -5717491841463349707
+      Erizo_pelado_2: -5186075154339069186
+      Erizo_pelado_20: -6496746689053804939
+      Erizo_pelado_21: 2447853425593590552
+      Erizo_pelado_3: 5921191389514253949
+      Erizo_pelado_4: -242502303496718468
+      Erizo_pelado_5: -4063626479476785493
+      Erizo_pelado_6: -8470666707749718334
+      Erizo_pelado_7: -1851877930023389502
+      Erizo_pelado_8: -8420625726787871772
+      Erizo_pelado_9: -3152295404853801051
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
