@@ -4,10 +4,10 @@ using UnityEngine;
 public class ScoreScript : MonoBehaviour
 {
     [SerializeField] public TextMeshProUGUI scoreText;
-    public int scoreValue;
     void Start()
     {
-        scoreText.text = "Score: "+ scoreValue.ToString();
+        ScoreHolder scoreHolder  = FindAnyObjectByType<ScoreHolder>();
+        scoreText.text = "Score: "+ scoreHolder.points.ToString();
     }
 
 }
