@@ -5,6 +5,6 @@ public class GameOver : MonoBehaviour
 {
     public void onButton()
     {
-        SceneManager.LoadScene("ScenaDani");
+        SceneManager.LoadScene("StartMenu");
     }
 }
