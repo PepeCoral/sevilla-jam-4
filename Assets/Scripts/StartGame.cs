@@ -18,4 +18,9 @@ public class StartGame : MonoBehaviour
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("Tutorial");
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
