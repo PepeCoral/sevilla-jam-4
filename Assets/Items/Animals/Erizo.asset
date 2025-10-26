@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c86908b8d81a4fb4ca337321727ffccb, type: 3}
+  m_Name: Erizo
+  m_EditorClassIdentifier: Assembly-CSharp::AnimalItem
+  sprite: {fileID: 21300000, guid: a464be940388038429c87247236d0681, type: 3}
+  hairToDrop: {fileID: 11400000, guid: 2d966f1bd28d4a04293cba0e0bf4265f, type: 2}
+  baldAnimal: {fileID: 11400000, guid: 25b13b3d7031cd84f831e194e146d49e, type: 2}
