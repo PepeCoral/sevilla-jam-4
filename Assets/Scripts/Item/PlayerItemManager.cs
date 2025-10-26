@@ -53,7 +53,7 @@ public class PlayerItemManager : MonoBehaviour
 
     private void Act(InputAction.CallbackContext _)
     {
-        var cols = Physics2D.OverlapCircleAll(this.transform.position, 1.35f);
+        var cols = Physics2D.OverlapCircleAll(this.transform.position, 1f);
         cols = sortByDistance(cols);
 
         Item itemToPickUp = findComponent<ItemPickUpElement>(cols)?.item;
@@ -63,40 +63,60 @@ public class PlayerItemManager : MonoBehaviour
         BaldChair baldChair = findComponent<BaldChair>(cols);
 
 
-        if (!holder.hasItem() && itemToPickUp != null)
-        {
-            holder.setItem(itemToPickUp);
-        }
+       
 
-        else if (holder.hasItem() && holder.getItem()?.GetType() == typeof(WigItem) && baldChair != null && baldChair.isBusy) 
+        if (holder.hasItem() && holder.getItem()?.GetType() == typeof(WigItem) && baldChair != null && baldChair.isBusy) 
         {
+            print(1);
             baldChair.giveWig((WigItem)holder.dropItem());
         }
 
         else if (!holder.hasItem() && animalPickUp != null)
         {
+            print(2);
             holder.setItem(animalPickUp.pickAnimal());
+        }
+        else if (coloringStation != null)
+        {
+            print(4);
+            coloringStationLogic(coloringStation);
+        }
+        else if (!holder.hasItem())
+        {
+            if(table != null && table.hasItem())
+            {
+                tableLogic(table);
+            }
+            else if (itemToPickUp != null)
+            {
+                print(7);
+                holder.setItem(itemToPickUp);
+            }
+
+
         }
 
         else if (table != null)
         {
+            print(3);
             tableLogic(table);
         }
 
-        else if (coloringStation != null)
-        {
-            coloringStationLogic(coloringStation);
-        }
+        
 
-        else if (holder.hasItem() && holder.getItem().GetType() != typeof(AnimalItem) && isTagNear(cols, "TrashCan"))
+        else if (holder.hasItem() && !(holder.getItem().GetType() == typeof(AnimalItem) || holder.getItem().GetType() == typeof(BaldAnimalItem)) && isTagNear(cols, "TrashCan"))
         {
+            print(5);
             holder.dropItem();
         }
 
-        else if (holder.hasItem() && holder.getItem().GetType() == typeof(AnimalItem) && isTagNear(cols, "Trasportin"))
+        else if (holder.hasItem() && (holder.getItem().GetType() == typeof(AnimalItem) || holder.getItem().GetType() == typeof(BaldAnimalItem)) && isTagNear(cols, "Trasportin"))
         {
+            print(6);
             holder.dropItem();
         }
+
+        
     }
 
     private void coloringStationLogic(ColoringStation coloringStation)
