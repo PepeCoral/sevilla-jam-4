@@ -1,14 +1,14 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public float totalTime = 120;
     public float currentTime;
 
-    public delegate void _OnGameEnd(int points);
-    public static event _OnGameEnd OnGameEnd;
 
     public int points = 0;
+    [SerializeField] GameObject scoreHolder;
 
     
 
@@ -42,7 +42,10 @@ public class GameManager : MonoBehaviour
         currentTime -= Time.deltaTime;
 
         if (currentTime < 0) {
-            if(OnGameEnd!=null) OnGameEnd(points);
+            var go = Instantiate(scoreHolder);
+            ScoreHolder sc = go.GetComponent<ScoreHolder>();
+            sc.points = points;
+            SceneManager.LoadScene("GameOver");
         }
     }
 }
