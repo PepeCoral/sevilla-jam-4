@@ -7,7 +7,10 @@ public class ScoreScript : MonoBehaviour
     void Start()
     {
         ScoreHolder scoreHolder  = FindAnyObjectByType<ScoreHolder>();
-        scoreText.text = "Score: "+ scoreHolder.points.ToString();
+        scoreText.text = "Score: " + scoreHolder.points.ToString();
+        
+
+
     }
 
 }
