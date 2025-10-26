@@ -7880,7 +7880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 112c294c68a7ce040bb7d2cb967cbcf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  totalTime: 2
+  totalTime: 120
   currentTime: 0
   points: 2
   scoreHolder: {fileID: 746153574382054835, guid: 665b13989dbf6be4f82900cc2b82917b, type: 3}
