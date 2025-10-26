@@ -8,13 +8,17 @@ public class BaldChair : MonoBehaviour
     [SerializeField] List<Sprite> balds;
     [SerializeField] List<WigItem> wigs;
     [SerializeField] List<AnimalItem> animals;
+    [SerializeField] List<RawHairItem> rawHair;
+    [SerializeField] List<Sprite> bucket;
     [SerializeField] SpriteRenderer baldRenderer;
     [SerializeField] SpriteRenderer wigRenderer;
 
     [SerializeField] GameObject wigDialog;
     [SerializeField] SpriteRenderer dialogWigRenderer;
-    [SerializeField] SpriteRenderer dialogColorRenderer;
     [SerializeField] SpriteRenderer dialogAnimalRenderer;
+    [SerializeField] SpriteRenderer dialogBucketRenderer;
+    [SerializeField] SpriteRenderer dialogRawHair;
+    [SerializeField] SpriteRenderer dialogUncoloredHair;
     private (WigColor, WigType) generateRandomWig()
     {
         int wigColorRdn = Random.Range(0, 3);
@@ -50,13 +54,21 @@ public class BaldChair : MonoBehaviour
     private void setDialog() 
     {
         wigDialog.SetActive(true);
-        dialogColorRenderer.color = wigColors[(int)expectedWig.Item1];
+
         dialogWigRenderer.color = wigColors[(int)expectedWig.Item1];
-        
         dialogWigRenderer.sprite = wigs[(int)expectedWig.Item2].sprite;
+        
         dialogAnimalRenderer.sprite = animals[(int)expectedWig.Item2].sprite;
 
-        
+        dialogBucketRenderer.sprite = bucket[(int)expectedWig.Item2];
+
+        dialogRawHair.sprite = rawHair[(int)expectedWig.Item1].sprite;
+
+        dialogUncoloredHair.sprite = wigs[(int)expectedWig.Item2].sprite;
+
+
+
+
     }
 
     private void Update()
