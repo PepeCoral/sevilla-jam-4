@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f15444e5372ff514fb4919c559e172bf, type: 3}
   m_Name: BaldErizo
   m_EditorClassIdentifier: Assembly-CSharp::BaldAnimalItem
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 5cbea86710d95654a844cd6c6312e681, type: 3}
