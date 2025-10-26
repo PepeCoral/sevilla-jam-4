@@ -7882,7 +7882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   totalTime: 120
   currentTime: 0
-  points: 2
+  points: 0
   scoreHolder: {fileID: 746153574382054835, guid: 665b13989dbf6be4f82900cc2b82917b, type: 3}
 --- !u!4 &2136880595
 Transform:
