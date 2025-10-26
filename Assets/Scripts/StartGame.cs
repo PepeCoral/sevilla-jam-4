@@ -10,7 +10,6 @@ public class StartGame : MonoBehaviour
     public void OnButton()
     {
         ClickSound.Play();
-        print("TEST111");
         anim.SetBool("transition", true);
         StartCoroutine(Wait());
         
@@ -18,6 +17,6 @@ public class StartGame : MonoBehaviour
     private IEnumerator Wait()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("ScenaDani");
+        SceneManager.LoadScene("Tutorial");
     }
 }
