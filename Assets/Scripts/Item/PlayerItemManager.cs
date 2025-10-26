@@ -154,7 +154,7 @@ public class PlayerItemManager : MonoBehaviour
                     coloringStation.updateColor();
                 }
             }
-            else
+            else if (!holder.hasItem())
             {
                 holder.setItem(coloringStation.pickItem());
                 SoundHelper.Instance.PlayRandomSound(pickUps);
