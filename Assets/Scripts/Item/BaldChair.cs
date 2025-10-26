@@ -60,7 +60,7 @@ public class BaldChair : MonoBehaviour
         
         dialogAnimalRenderer.sprite = animals[(int)expectedWig.Item2].sprite;
 
-        dialogBucketRenderer.sprite = bucket[(int)expectedWig.Item2];
+        dialogBucketRenderer.sprite = bucket[(int)expectedWig.Item1];
 
         dialogRawHair.sprite = rawHair[(int)expectedWig.Item1].sprite;
 
